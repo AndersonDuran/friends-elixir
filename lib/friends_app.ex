@@ -1,13 +1,5 @@
 defmodule FriendsApp do
-  def hello do
-    :world
-  end
-
-  def cur_environment do
-    case Mix.env() do
-      :prod -> "Production"
-      :dev -> "Development"
-      :test -> "Test"
-    end
+  def init do
+    FriendsApp.CLI.Main.start_app()
   end
 end
